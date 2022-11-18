@@ -1,0 +1,12 @@
+/* Add application styles & imports to this file! */
+
+/* CSS sempre dá preferência ao scoped style*/
+h1:hover {
+  color: lime;
+  border: 1px solid black;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}

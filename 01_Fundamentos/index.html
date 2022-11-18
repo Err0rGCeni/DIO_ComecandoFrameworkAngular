@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PORTAL DE NOTICIAS GALAXY</title>
+        <link rel="stylesheet" href="styles/card.css" />
+        <!-- defer: após a DOM criada, executar o shadow depois -->
+        <script src="src/components//CardNews.js" defer></script>
+        <script src="src/components/TituloDinamico.js" defer></script>
+    </head>
+    <body>
+        <card-news
+            autor="GCeni"
+            title="Darth Vader Contrata!"
+            link-url="#"
+            photo="assets/darth_vader_chibi.png"
+            contet="Darth Vader procura devs para componentizar."
+        ></card-news>
+
+        <card-news
+            title="Yoda Ataca!"
+            link-url="#"
+            contet="Componetizar deve Yoda..."
+        /></card-news>
+
+        <card-news
+            autor="GCeni"
+            title="Darth Vader Demite 3 mil!"
+            link-url="#"
+            photo="assets/darth_vader_chibi.png"
+            contet="Darth Vader já componentizou o que queria."
+        /></card-news>
+
+        <titulo-dinamico titulo="Urgente urgentíssimo!"></titulo-dinamico>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+<app-comp-att>
+  <h2>Oi?</h2>
+  <p>De fora: Oi!</p>
+</app-comp-att>
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+
+<ng-template #anotherBlock>
+  <p>Bloco Secreto</p>
+</ng-template>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+
+<menu-component></menu-component>
+
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<h1>OLÁ!</h1>
+
+<!-- Interpolação -->
+<my-button label="Sair"></my-button>
+<my-button label="{{buttonLabel}}"></my-button>
+
+<!-- Property Binding -->
+<my-button [label]="buttonSecond"></my-button>
+<my-button [label]="'Literal!'"></my-button>
+
+<!-- Two Way Data Binding-->
+<app-entry-data></app-entry-data>

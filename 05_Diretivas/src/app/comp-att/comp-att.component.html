@@ -1,0 +1,26 @@
+<p [ngClass]="estilo">comp-att works!</p>
+<button (click)="trocar()">SWAP</button>
+<h1 [ngStyle]="{'background': corFundo}">Curso Angular</h1>
+
+<ng-content select="h2"></ng-content>
+
+<h2>Adicionar um item</h2>
+<input type="text" [(ngModel)]="item">
+<button (click)="addLista()">Add</button>
+
+<ng-content select="p"></ng-content>
+
+<p>{{ item }}</p>
+
+<ul>
+  <li *ngFor="let elemento of  lista">{{ elemento }}</li>
+</ul>
+
+<hr>
+
+<ng-template [ngIf]="isEnableBlock">
+  <a href="#">Finalizar</a>
+</ng-template>
+
+<hr>
+
